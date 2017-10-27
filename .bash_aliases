@@ -91,6 +91,10 @@ function extract {
           return 1
       fi
     done
-fi
+  fi
 }
+
+if [ -f ~/.bash_private ]; then
+  . ~/.bash_private
+fi
 
