@@ -45,8 +45,10 @@ alias du='du -arch | sort -h'
 alias free='free -mt'
 alias ps='ps auxf'
 
-alias trkStop="xinput"
-alias snap="byzanz-record -d 10 --delay=5 -x 0 -y 0 -w 1920 -h 1080 ~/Desktop/desktop-animation.gif"
+alias trkStop='xinput --set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 0'
+alias trkStart='xinput --set-prop "SynPS/2 Synaptics TouchPad" "Device Enabled" 1'
+
+alias snap="byzanz-record -d 10 --delay=2 -x 0 -y 0 -w 1920 -h 1080 ~/Desktop/desktop-animation.gif"
 
 alias screen='brightness-controller'
 alias sound='alsamixer'
