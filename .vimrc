@@ -35,4 +35,3 @@ if &term =~ '456color'
     set t_ut=grey
 endif
 
-

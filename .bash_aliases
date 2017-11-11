@@ -53,10 +53,17 @@ alias snap="byzanz-record -d 10 --delay=2 -x 0 -y 0 -w 1920 -h 1080 ~/Desktop/de
 alias screen='brightness-controller'
 alias sound='alsamixer'
 
+alias clera='clear'
+alias claer='clear'
+
 # Recursively remove .DS_Store files
 alias cleanupds="find . -type f -name '*.DS_Store' -ls -delete"
 
 alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
+
+# Rust
+alias cb='cargo build'
+alias ct='cargo test'
 
 
 
