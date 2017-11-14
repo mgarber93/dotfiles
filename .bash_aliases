@@ -1,5 +1,6 @@
 alias bashrc='vim ~/.bash_aliases && source ~/.bashrc'
 
+alias cd..='cd ..'
 alias ..='cd ..'
 alias ...='cd ../..'
 alias ....='cd ../../..'
@@ -41,7 +42,7 @@ alias stopAll='sudo -- sh -c "service mongod stop; service mysql stop; /etc/init
 
 
 alias df='df -Tha --total'
-alias du='du -arch | sort -h'
+alias du='du -ach | sort -h'
 alias free='free -mt'
 alias ps='ps auxf'
 
@@ -53,6 +54,17 @@ alias snap="byzanz-record -d 10 --delay=2 -x 0 -y 0 -w 1920 -h 1080 ~/Desktop/de
 alias screen='brightness-controller'
 alias sound='alsamixer'
 
+# Netstat
+alias ports='netstat -tulanp'
+
+# Wget
+alias wget='wget -c'
+
+# Browsers
+alias chrome='/opt/google/chrome/chrome'
+alias browser=chrome
+
+# Typos
 alias clera='clear'
 alias claer='clear'
 
@@ -63,7 +75,27 @@ alias dotfiles="/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME"
 
 # Rust
 alias cb='cargo build'
+alias cr='cargo run'
 alias ct='cargo test'
+
+alias firefox='(/opt/firefox/firefox &) && exit'
+
+# Backup
+alias backup='rsync --archive \
+      --delete \
+      --progress \
+      --human-readable \
+      --exclude node_modules \
+      --exclude .DS_Store \
+      --exclude .meteor/local \
+      ~/Code \
+      ~/Desktop \
+      ~/Documents \
+      ~/Videos \
+      ~/Music \
+      ~/Pictures \
+      /media/m/Seagate Backup Plus Drive\
+      | tee /media/m/Seagate Backup Plus Drive/backup.log'
 
 
 
