@@ -1,3 +1,4 @@
+alias sudo='sudo '
 alias bashrc='vim ~/.bash_aliases && source ~/.bashrc'
 
 alias cd..='cd ..'
@@ -14,6 +15,9 @@ alias cc='cd ~/Code/cpp/'
 alias py='cd ~/Code/python'
 alias hs='cd ~/Code/haskell'
 alias rs='cd ~/Code/rust'
+alias other='cd ~/Code/other/'
+alias dwn='cd ~/Downloads/'
+alias doc='cd ~/Documents/'
 
 alias monStart='sudo service mongod start'
 alias monStop='sudo service mongod stop'
@@ -94,7 +98,7 @@ alias backup='rsync --archive \
       ~/Videos \
       ~/Music \
       ~/Pictures \
-      /media/m/Seagate Backup Plus Drive\
+      /media/m/Seagate\ Backup\ Plus\ Drive\
       | tee /media/m/Seagate Backup Plus Drive/backup.log'
 
 
@@ -139,3 +143,5 @@ if [ -f ~/.bash_private ]; then
   . ~/.bash_private
 fi
 
+PATH=/usr/bin/java:$PATH
+export PATH

@@ -1,4 +1,5 @@
 [user]
 	email = mgarber93@gmail.com
+	name = Matt Garber
 [credential]
 	helper = cache --timeout=3600
