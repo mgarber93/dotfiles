@@ -14,7 +14,7 @@ set shiftwidth=2
 " On pressing tab, insert 4 spaces
 set expandtab
 
-" Font settings 
+" Font settings
 if has("gui_running")
   if has("gui_gtk2")
     set guifont=Inconsolata\ 12
@@ -27,7 +27,7 @@ endif
 set background=dark
 colorscheme hybrid_material
 highlight LineNr ctermfg=grey ctermbg=NONE
-hi CursorLine   cterm=NONE ctermbg=black ctermfg=white 
+hi CursorLine   cterm=NONE ctermbg=black ctermfg=white
 let g:javascript_plugin_jsdoc = 1
 
 " https://superuser.com/questions/457911/in-vim-background-color-changes-on-scrolling
