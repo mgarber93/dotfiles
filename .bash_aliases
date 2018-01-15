@@ -1,5 +1,12 @@
 alias sudo='sudo '
 alias bashrc='vim ~/.bash_aliases && source ~/.bashrc'
+alias vim='nvim'
+alias v='nvim'
+
+alias bfg='java -jar /opt/bfg/bfg-1.12.16.jar'
+alias ga='git add'
+alias gc='git commit'
+alias gs='git status'
 
 alias cd..='cd ..'
 alias ..='cd ..'
@@ -40,6 +47,12 @@ alias docStop='sudo systemctl stop docker'
 alias elsStart='sudo systemctl start elasticsearch.service'
 alias elsStatus='sudo systemctl status elasticsearch.service'
 alias elsStop='sudo systemctl stop elasticsearch.service'
+
+alias ni='npm install'
+alias ns='npm run start'
+alias nt='npm run test'
+alias createReact='create-react-app'
+alias createTypeReact='create-react-app --scripts-version=react-scripts-ts'
 
 alias status="elsStatus"
 alias stopAll='sudo -- sh -c "service mongod stop; service mysql stop; /etc/init.d/redis-server stop; /etc/init.d/postgresql stop; systemctl stop docker; systemctl stop elasticsearch.service"'
@@ -114,7 +127,7 @@ function extract {
     do
       if [ -f "$n" ] ; then
           case "${n%,}" in
-            *.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar) 
+            *.tar.bz2|*.tar.gz|*.tar.xz|*.tbz2|*.tgz|*.txz|*.tar)
                          tar xvf "$n"       ;;
             *.lzma)      unlzma ./"$n"      ;;
             *.bz2)       bunzip2 ./"$n"     ;;
